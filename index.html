@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Form Input Reservasi Travel</title>
-        <link href=""
-    </head>
-    <div class="container at-5">
-        <h1>Form Input Reservasi Travel</h1>
-        <div class="row">
-        <form method="get" action="output.html" class="col-8 needs-validations>
-            <div class="row g-3">
-            <div class="col-6">
-                <label for="input-kategori" class="form-label">Kategori</label>
-                
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Form reservasi Travel</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Form Input reservasi travel</h1>
+        <form method="get" action="output.html" novalidate>
+        <div class="row g-3">
+            <div class="col-4">
+                <label for="input-kategori" class="form-table">Kategori</label>
+                <select class="form-select" name="kategori" id="input-kategori" required/>
+                    <option value="">KATEGORI</option>
+                    <option value="REG">REGULER</option>
+                    <option value="PRE">PREMIUM</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label for="jumlah-orang" class="form-table">Jumlah Orang</label>
+                <input type="number" id="jumlah-orang" name="jumlah-orang" class="form-control" required/>
+            </div>
+            <div class="col-8">
+                <label for="input-tujuan"></label>
+                <select class="form-select" name="tujuan" id="input-tujuan" required>
+                    <option value="">TUJUAN</option>
+                    <option value="REG" id="reguler">BANDUNG RAYA</option>
+                    <option value="PRE" id="reguler">JAKARTA</option>
+                    <option value="PRE" id="reguler">SEMARANG</option>
+                    <option value="PRE" id="reguler">SURABAYA</option>
+                    <option value="PRE" id="premium">SINGAPURA</option>
+                    <option value="PRE" id="premium">THAILAND</option>
+                    <option value="PRE" id="premium">AUSTRALIA</option>
+                    <option value="PRE" id="premium">JEPANG</option>
+                </select>
+            </div>
+            <div class="input"></div>
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        const tujuan = document.getElementById('input-kategori')
+    </script>
+</body>
 </html>
